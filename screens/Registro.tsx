@@ -9,6 +9,7 @@ import {
   ImageBackground,
   Image,
   SafeAreaView,
+  ScrollView,
 } from 'react-native';
 
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -51,7 +52,7 @@ const Registro = () => {
       source={require('../assets/Registro.png')}
       style={styles.backgroundImage}
     >
-      <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.container}>
         <View style={styles.content}>
           <Image
             source={require('../assets/logo.png')}
@@ -130,7 +131,7 @@ const Registro = () => {
             <Text style={styles.buttonText}>Registrar</Text>
           </TouchableOpacity>
         </View>
-      </SafeAreaView>
+      </ScrollView>
     </ImageBackground>
   );
 };
